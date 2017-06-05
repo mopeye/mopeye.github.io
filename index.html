@@ -1,1 +1,189 @@
-Hello, I am MopEye!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="MopEye: Monitoring Per-app Network Performance. Available on Google Play">
+    <meta name="author" content="Daoyuan Wu, Rocky K. C. Chang, Weichao Li, Eric K. T. Cheng, and Debin Gao">
+    <link rel="icon" href="mopeye_mdpi.png">
+
+    <title>MopEye on Google Play</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="ccs/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="ccs/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">MopEye</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="https://arxiv.org/abs/1703.07551" target="_blank">Academic Paper</a></li>
+                <li><a href="https://daoyuan14.github.io/" target="_blank">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <font size="88" color="yellow"><b>MopEye</b></font>
+              <h1>Opportunistic Monitoring of Per-app Mobile Network Performance</h1>
+              <p>
+                <a href="https://www.facebook.com/mopeye/" target="_blank">
+                  <img src="facebook_icon.png" width="5%" height="5%">
+                </a>
+                &nbsp;
+			    <a href="https://play.google.com/store/apps/details?id=com.mopeye">
+                  <img src="google-play-badge.png" width="20%" height="20%">
+                </a>
+                &nbsp;
+                <a href="https://twitter.com/mopeye_app" target="_blank">
+                  <img src="twitter_icon.jpg" width="5%" height="5%">
+                </a>
+			  </p>
+              <h2>MopEye is a novel VPN-based app that enables you to speed test all your apps' network performance without the root.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="AppSpeedtestviaMopEye.png" width="140" height="200">
+          <h2>App Speedtest</h2>
+          <p>MopEye is the first and the only app on the market that provides per-app measurement for end users.</p>
+          <p><a class="btn btn-default" href="#speedtest" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="CapturePokemanGoPacketsviaMopEye.jpg" width="140" height="200">
+          <h2>Packet Sniffer</h2>
+          <p>By leveraging the VpnService interface, MopEye can intercept all your apps' network traffic.</p>
+          <p><a class="btn btn-default" href="#sniffpkt" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="ChangeDNSviaMopEye1.png" width="140" height="200">
+          <h2>DNS Changer</h2>
+          <p>With MopEye, you can change your DNS servers without root for both WiFi and 3G/4G.</p>
+          <p><a class="btn btn-default" href="#changedns" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="speedtest">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Per-app Speed Test<br><span class="text-muted">For the first time.</span></h2>
+          <p class="lead">We introduce a new paradigm of measuring per-app mobile network performance. By leveraging the VpnService interface, MopEye can measure network round-trip delay for each app whenever there is app traffic, directly on your device without involving a remote VPN server.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="AppSpeedtestviaMopEye.png" alt="App Speedtest via MopEye" height="80%">
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="sniffpkt">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Capture All Apps' Packets<br><span class="text-muted">Without the root.</span></h2>
+          <p class="lead">Besides speedtest, MopEye further gives you several advanced features (all in free and without any advertisements):</p>
+          <ul class="lead">
+			<li>Know which apps in your phone send network traffic in the background.</li>
+			<li>Capture the server domains of each app (you may figure out which apps send a lot of Ad traffic).</li>
+			<li>Compare similar apps' network performance, and select the one that has better performance.</li>
+			<li>Figure out network-unfriendly apps that keep sending network traffic, which consumes your battery.</li>
+			<li>Understand which apps encounter network failures through our "Error Logs" setting menu.</li>
+		  </ul>
+          <p class="lead">The left-side figure shows that MopEye can monitor the network performance and status of Pokemon Go servers.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="CapturePokemanGoPacketsviaMopEye.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette" id="changedns">
+        <img class="featurette-image img-responsive center-block" src="ChangeDNSviaMopEye2.png">
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017 The MopEye Team. &middot; <a href="https://raw.githubusercontent.com/daoyuan14/MopEye/master/privacy.txt" target="_blank">Privacy</a> &middot;</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
